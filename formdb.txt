@@ -1,5 +1,6 @@
-1.(personal_info)
-candidate_name varchar(20), gender varchar(8),  father name varchar(20), mother name varchar(20), id_number int
+1.(CANDIDATE_PARTICULARS)
+candidate_name varchar(20) NOT NULL, gender varchar(8) NOT NULL,  father name varchar(20) NOT NULL, mother name varchar(20) NOT NULL, 
+state varchar(25) NOT NULL, id_type varchar(35) NOT NULL, id_number int NOT NULL PRIMARY KEY 
 
 2.(address)
 candidate_name varchar(20), address varchar(55), city varchar(25), district varchar(25), pin_code int(6), state varchar(25)
@@ -8,7 +9,8 @@ candidate_name varchar(20), address varchar(55), city varchar(25), district varc
 candidate_name varchar(20), email id varchar(35), m.no. int(10) 
 
 4.(exam_detail)
-candidate_name varchar(20), category varchar(10), statusof_q_exm varchar(35), emp_status varchar(15), apply_post varchar(25), appear_in_ctet int
+candidate_name varchar(20), category varchar(10), statusof_q_exm varchar(35), emp_status varchar(15), apply_post varchar(25),
+ appear_in_ctet int
 
 5.(centre_choice)
 id_number int, candidate_name varchar(20), first_pref varchar(25), sec_pref varchar(25), third_pref varchar(25)
