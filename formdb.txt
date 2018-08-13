@@ -46,3 +46,7 @@ CREATE TABLE PERSONAL_DETAILS
 5.
  CREATE TABLE CENTER_CHOICE
 (id_number int PRIMARY KEY,first_pref varchar(25) NOT NULL, sec_pref varchar(25) NOT NULL, third_pref varchar(25) NOT NULL);
+
+6.
+CREATE TABLE PASSWORD_GEN
+(id_number int NOT NULL PRIMARY KEY, pass_word varchar(30) NOT NULL, security_question varchar(255) NOT NULL, security_answer varchar(255) NOT NULL);
