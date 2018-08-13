@@ -1,20 +1,25 @@
 1.(CANDIDATE_PARTICULARS)
 candidate_name varchar(20) NOT NULL, gender varchar(8) NOT NULL,  father name varchar(20) NOT NULL, mother name varchar(20) NOT NULL, 
-state varchar(25) NOT NULL, id_type varchar(35) NOT NULL, id_number int NOT NULL PRIMARY KEY 
+state varchar(25) NOT NULL, id_type varchar(35) NOT NULL, id_number int NOT NULL PRIMARY KEY , diff_abled varchar(10) NOT NULL,
 
-2.(address)
-candidate_name varchar(20), address varchar(55), city varchar(25), district varchar(25), pin_code int(6), state varchar(25)
+2.(MAILING_ADDRESS)
+candidate_name varchar(20) NOT NULL, address varchar(55) NOT NULL, locality_mohalla varchar (35), city_town varchar(25) NOT NULL, district varchar(25) NOT NULL, pin_code int(6) NOT NULL,
+ state varchar(25) NOT NULL
 
-3.(contact_details)
-candidate_name varchar(20), email id varchar(35), m.no. int(10) 
+3.(CONTACT_DETAILS)
+candidate_name varchar(20) NOT NULL, email id varchar(35) NOT NULL, m.no. int(10) NOT NULL ,std_code_tel_no int(12)
 
-4.(exam_detail)
-candidate_name varchar(20), category varchar(10), statusof_q_exm varchar(35), emp_status varchar(15), apply_post varchar(25),
- appear_in_ctet int
+4.(PERSONAL_DETAILS)
+candidate_name varchar(20), category varchar(10) NOT NULL, statusof_q_exm varchar(35) NOT NULL, emp_status varchar(55) NOT NULL, apply_post varchar(255) NOT NULL,
+ appear_in_ctet varchar(10) NOT NULL
 
-5.(centre_choice)
-id_number int, candidate_name varchar(20), first_pref varchar(25), sec_pref varchar(25), third_pref varchar(25)
+5.(CENTER_CHOICE)
+id_number int PRIMARY KEY,first_pref varchar(25) NOT NULL, sec_pref varchar(25) NOT NULL, third_pref varchar(25) NOT NULL
 
-6.(language)
-candidate_name varchar(20), language1 varchar(15), language2 varchar(15), q_paper_medium varchar(15)
+6.(LANGUAGE)
+candidate_name varchar(20) NOT NULL, language1 varchar(15) NOT NULL, language2 varchar(15) NOT NULL, q_paper_medium varchar(15) NOT NULL
+
+7.(PASSWORD_GEN)
+password varchar(30) NOT NULL, security_question varchar(255) NOT NULL, security_answer varchar(255) NOT NULL, id_number int NOT NULL PRIMARY KEY
+
 
