@@ -1,0 +1,37 @@
+insert statements
+
+
+1.candidate_particular
+
+INSERT INTO candidate_particular(id_number, candidate_name, gender, father_name, mother_name, state, id_type, diff_abled)
+VALUES();
+
+2.center_choice
+
+INSERT INTO center_choice(id_number, first_pref, sec_pref, third_pref)
+VALUES (value1,value2,value3,value4);
+
+3.contact_details
+
+INSERT INTO contact_details(candidate_name, email_id, mobile_no, std_code_tel_no)
+VALUES (v1,v2,v3,v4);
+
+4.language
+
+INSERT INTO language(candidate_name, language1, language2, q_paper_medium) 
+VALUES (v1, v2, v3, v4);
+
+5.mailing_address
+
+INSERT INTO mailing_address(candidate_name, address, locality_mohalla, city_town, district, pin_code, state)
+VALUES(v1, v2, v3, v4, v5, v6, v7);
+
+6.personal_details
+
+INSERT INTO personal_details(candidate_name, category, statusof_q_exm, emp_status, apply_post, appear_in_ctet) 
+VALUES (v1, v2, v3, v4, v5, v6);
+
+7.password_gen
+
+INSERT INTO password_gen(id_number, pass_word, security_question, security_answer)
+VALUES (v1, v2, v3, v4);
