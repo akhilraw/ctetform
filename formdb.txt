@@ -16,4 +16,3 @@ id_number int, candidate_name varchar(20), first_pref varchar(25), sec_pref varc
 6.(language)
 candidate_name varchar(20), language1 varchar(15), language2 varchar(15), q_paper_medium varchar(15)
 
-gfdgf
