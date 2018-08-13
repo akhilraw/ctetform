@@ -42,3 +42,7 @@ CREATE TABLE CONTACT_DETAILS
 4.
 CREATE TABLE PERSONAL_DETAILS
 (candidate_name varchar(20), category varchar(10) NOT NULL, statusof_q_exm varchar(35) NOT NULL, emp_status varchar(55) NOT NULL, apply_post varchar(255) NOT NULL,appear_in_ctet varchar(10) NOT NULL);
+
+5.
+ CREATE TABLE CENTER_CHOICE
+(id_number int PRIMARY KEY,first_pref varchar(25) NOT NULL, sec_pref varchar(25) NOT NULL, third_pref varchar(25) NOT NULL);
