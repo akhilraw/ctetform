@@ -1,5 +1,5 @@
 1.(CANDIDATE_PARTICULARS)
-candidate_name varchar(20) NOT NULL, gender varchar(8) NOT NULL,  father name varchar(20) NOT NULL, mother name varchar(20) NOT NULL, 
+candidate_name varchar(20) NOT NULL, gender varchar(8) NOT NULL,  father_name varchar(20) NOT NULL, mother_name varchar(20) NOT NULL, 
 state varchar(25) NOT NULL, id_type varchar(35) NOT NULL, id_number int NOT NULL PRIMARY KEY , diff_abled varchar(10) NOT NULL,
 
 2.(MAILING_ADDRESS)
@@ -7,7 +7,7 @@ candidate_name varchar(20) NOT NULL, address varchar(55) NOT NULL, locality_moha
  state varchar(25) NOT NULL
 
 3.(CONTACT_DETAILS)
-candidate_name varchar(20) NOT NULL, email id varchar(35) NOT NULL, m.no. int(10) NOT NULL ,std_code_tel_no int(12)
+candidate_name varchar(20) NOT NULL, email_id varchar(35) NOT NULL, m.no. int(10) NOT NULL ,std_code_tel_no int(12)
 
 4.(PERSONAL_DETAILS)
 candidate_name varchar(20), category varchar(10) NOT NULL, statusof_q_exm varchar(35) NOT NULL, emp_status varchar(55) NOT NULL, apply_post varchar(255) NOT NULL,
@@ -20,7 +20,7 @@ id_number int PRIMARY KEY,first_pref varchar(25) NOT NULL, sec_pref varchar(25) 
 candidate_name varchar(20) NOT NULL, language1 varchar(15) NOT NULL, language2 varchar(15) NOT NULL, q_paper_medium varchar(15) NOT NULL
 
 7.(PASSWORD_GEN)
-password varchar(30) NOT NULL, security_question varchar(255) NOT NULL, security_answer varchar(255) NOT NULL, id_number int NOT NULL PRIMARY KEY
+pass_word varchar(30) NOT NULL, security_question varchar(255) NOT NULL, security_answer varchar(255) NOT NULL, id_number int NOT NULL PRIMARY KEY
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -50,7 +50,10 @@ CREATE TABLE PERSONAL_DETAILS
 6.
 CREATE TABLE PASSWORD_GEN
 (id_number int NOT NULL PRIMARY KEY, pass_word varchar(30) NOT NULL, security_question varchar(255) NOT NULL, security_answer varchar(255) NOT NULL);
+<<<<<<< HEAD
 
 7.
 CREATE TABLE LANGUAGE
 (candidate_name varchar(20) NOT NULL, language1 varchar(15) NOT NULL, language2 varchar(15) NOT NULL, q_paper_medium varchar(15) NOT NULL);
+=======
+>>>>>>> aa816079cb70c2980a27dc0bd96d0f853a131577
