@@ -38,3 +38,7 @@ CREATE TABLE MAILING_ADDRESS
 3.
 CREATE TABLE CONTACT_DETAILS
 (candidate_name varchar(20) NOT NULL, email_id varchar(35) NOT NULL, mobile_no int(10) NOT NULL ,std_code_tel_no int(12));
+
+4.
+CREATE TABLE PERSONAL_DETAILS
+(candidate_name varchar(20), category varchar(10) NOT NULL, statusof_q_exm varchar(35) NOT NULL, emp_status varchar(55) NOT NULL, apply_post varchar(255) NOT NULL,appear_in_ctet varchar(10) NOT NULL);
