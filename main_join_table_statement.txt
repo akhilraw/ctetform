@@ -1,0 +1,12 @@
++++  statement of final table  +++
+
+
+
+SELECT cp.id_number,cp.candidate_name,ma.pin_code,cd.email_id,pd.statusof_q_exm,pd.apply_post,cc.first_pref,l.q_paper_medium,pg.pass_word
+FROM ((((((candidate_particular AS cp
+	  INNER JOIN mailing_address AS ma ON cp.candidate_name=ma.candidate_name)
+     INNER JOIN contact_details AS cd ON ma.candidate_name=cd.candidate_name)
+    INNER JOIN personal_details AS pd ON cd.candidate_name=pd.candidate_name)
+   INNER JOIN center_choice AS cc ON cc.id_number=cp.id_number)
+  INNER JOIN language AS l ON l.candidate_name=pd.candidate_name)
+ INNER JOIN password_gen AS pg ON pg.id_number=cp.id_number);
