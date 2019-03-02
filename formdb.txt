@@ -1,3 +1,59 @@
-hi i am akhilesh . and i put here form sql dbv structure.\
-wegfwegfgwefwehcdsfdsf
-dsafds
+1.(CANDIDATE_PARTICULARS)
+ serial_no bigint AUTO_INCREMENT PRIMARY KEY, candidate_name varchar(20) NOT NULL, gender varchar(8) NOT NULL,  father_name varchar(20) NOT NULL, mother_name varchar(20) NOT NULL, 
+state varchar(25) NOT NULL, id_type varchar(35) NOT NULL, id_number bigint NOT NULL, diff_abled varchar(10) NOT NULL,
+
+2.(MAILING_ADDRESS)
+candidate_name varchar(20) NOT NULL, address varchar(55) NOT NULL, locality_mohalla varchar (35), city_town varchar(25) NOT NULL, district varchar(25) NOT NULL, pin_code int(6) NOT NULL,
+ state varchar(25) NOT NULL
+
+3.(CONTACT_DETAILS)
+candidate_name varchar(20) NOT NULL, email_id varchar(35) NOT NULL, m.no. int(10) NOT NULL ,std_code_tel_no int(12)
+
+4.(PERSONAL_DETAILS)
+candidate_name varchar(20), category varchar(10) NOT NULL, statusof_q_exm varchar(35) NOT NULL, emp_status varchar(55) NOT NULL, apply_post varchar(255) NOT NULL,
+ appear_in_ctet varchar(10) NOT NULL
+
+5.(CENTER_CHOICE)
+id_number int PRIMARY KEY,first_pref varchar(25) NOT NULL, sec_pref varchar(25) NOT NULL, third_pref varchar(25) NOT NULL
+
+6.(LANGUAGE)
+candidate_name varchar(20) NOT NULL, language1 varchar(15) NOT NULL, language2 varchar(15) NOT NULL, q_paper_medium varchar(15) NOT NULL
+
+7.(PASSWORD_GEN)
+pass_word varchar(30) NOT NULL, security_question varchar(255) NOT NULL, security_answer varchar(255) NOT NULL, id_number int NOT NULL PRIMARY KEY
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+1.
+CREATE TABLE candidate_particular
+( serial_no bigint AUTO_INCREMENT  PRIMARY KEY, id_number bigint NOT NULL, candidate_name varchar(20) NOT NULL, gender varchar(8) NOT NULL,  father_name varchar(20) NOT NULL, mother_name varchar(20) NOT NULL, state varchar(25) NOT NULL,
+id_type varchar(35) NOT NULL,diff_abled varchar(10) NOT NULL);
+
+
+2.
+CREATE TABLE MAILING_ADDRESS
+(candidate_name varchar(20) NOT NULL, address varchar(55) NOT NULL, locality_mohalla varchar (35), city_town varchar(25) NOT NULL, district varchar(25) NOT NULL, pin_code int(6) NOT NULL, state varchar(25) NOT NULL);
+
+3.
+CREATE TABLE CONTACT_DETAILS
+(candidate_name varchar(20) NOT NULL, email_id varchar(35) NOT NULL, mobile_no int(10) NOT NULL ,std_code_tel_no int(12));
+
+4.
+CREATE TABLE PERSONAL_DETAILS
+(candidate_name varchar(20), category varchar(10) NOT NULL, statusof_q_exm varchar(35) NOT NULL, emp_status varchar(55) NOT NULL, apply_post varchar(255) NOT NULL,appear_in_ctet varchar(10) NOT NULL);
+
+5.
+ CREATE TABLE CENTER_CHOICE
+(id_number int PRIMARY KEY,first_pref varchar(25) NOT NULL, sec_pref varchar(25) NOT NULL, third_pref varchar(25) NOT NULL);
+
+6.
+CREATE TABLE PASSWORD_GEN
+(id_number int NOT NULL PRIMARY KEY, pass_word varchar(30) NOT NULL, security_question varchar(255) NOT NULL, security_answer varchar(255) NOT NULL);
+<<<<<<< HEAD
+
+7.
+CREATE TABLE LANGUAGE
+(candidate_name varchar(20) NOT NULL, language1 varchar(15) NOT NULL, language2 varchar(15) NOT NULL, q_paper_medium varchar(15) NOT NULL);
+=======
+>>>>>>> aa816079cb70c2980a27dc0bd96d0f853a131577
